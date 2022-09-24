@@ -2,7 +2,7 @@
 
 # Prevent tainting variables via environment
 # See: https://gist.github.com/duxsco/fad211d5828e09d0391f018834f955c9
-unset denials denials_context denials_relevant dmesg_denials index ino_number ino_objects ino_tcontext line policy_name
+unset denials denials_context denials_relevant dmesg_denials index ino_number ino_objects ino_tcontext key line policy_name stype ttype
 
 if [[ ! -d ${HOME}/my_selinux_policies ]]; then
     printf 'Folder "%s" doesn'\''t exist! Aborting...\n' "${HOME}/my_selinux_policies" >&2
