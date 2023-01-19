@@ -1,5 +1,7 @@
 # selinux-policy-creator
 
+> ️⚠️ You can find information on my GnuPG public key in my [GitHub profile README](https://github.com/duxsco/)! ⚠️
+
 `selinux-policy-creator.sh` creates SELinux policies within `~/my_selinux_policies` while running in permissive mode.
 
 Sample run:
