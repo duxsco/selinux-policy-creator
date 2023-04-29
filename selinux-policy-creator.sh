@@ -10,7 +10,7 @@ if [[ ! -d ${HOME}/my_selinux_policies ]]; then
 fi
 
 dmesg_denials="$(mktemp)"
-dmesg | grep -E "[[:space:]]+type=(1400|1107)[[:space:]]+.*[[:space:]]+avc:[[:space:]]+denied[[:space:]]+" > "${dmesg_denials}"
+dmesg | grep -E "[[:space:]]+type=(1400|1107)[[:space:]]+.*[[:space:]]+avc:[[:space:]]+denied[[:space:]]+" | sed 's/scontext=/+=/' | sort -t "+" -k 2,2 | sed 's/+=/scontext=/' > "${dmesg_denials}"
 
 denials=""
 
