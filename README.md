@@ -1,6 +1,17 @@
 # selinux-policy-creator
 
-> ️⚠️ You can find information on my GnuPG public key in my [GitHub profile README](https://github.com/duxsco/)! ⚠️
+```
+  __________________________________________________
+/ This repo has been archived!                       \
+| Its successor is at:                               |
+\ https://codeberg.org/duxsco/selinux-policy-creator /
+  --------------------------------------------------
+         \   ^__^
+          \  (oo)\_______
+             (__)\       )\/\
+                 ||----w |
+                 ||     ||
+```
 
 `selinux-policy-creator.sh` creates SELinux policies within `~/my_selinux_policies` while running in permissive mode.
 
